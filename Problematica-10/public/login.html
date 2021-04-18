@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Metas section -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="Dario Eugenio Falzone" name="author" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Style Sheets -->
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+
+		<!-- Title page -->
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="login-page">
+			<div class="form">
+				<form class="login-form" action="" method="get">
+					<label for="login-email">Email</label>
+					<input type="email" id="login-email" name="login-email" required />
+
+					<label for="login-pass">Password</label>
+					<input type="password" id="login-pass" name="login-pass" required />
+
+					<input type="button" id="button-send" value="Login" />
+
+					<p class="message">
+						Not registered? <a href="register.html">Create an account</a>
+					</p>
+				</form>
+				<!-- Error message -->
+				<div id="message-text"></div>
+			</div>
+		</div>
+
+		<!-- JS -->
+		<script src="../js/login.js"></script>
+	</body>
+</html>

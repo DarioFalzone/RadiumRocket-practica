@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Metas section -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="Dario Eugenio Falzone" name="author" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Style Sheets -->
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+
+		<!-- Title page -->
+		<title>Register</title>
+	</head>
+	<body>
+		<div class="login-page">
+			<div class="form">
+				<form class="register-form">
+					<label for="register-name">Name</label>
+					<input type="text" id="register-name" required />
+
+					<label for="register-email">Email</label>
+					<input type="email" id="register-email" required />
+
+					<label for="register-password">Password</label>
+					<input type="password" id="register-password" required />
+
+					<label for="register-repeat-password">Repeat Password</label>
+					<input type="password" id="re-password" required />
+
+					<button
+						type="button"
+						class="send-button"
+						onclick="validationFunction();"
+					>
+						register
+					</button>
+					<button type="reset" id="button-reset">reset</button>
+
+					<p class="message">
+						Already registered? <a href="login.html">Sign In</a>
+					</p>
+				</form>
+				<!-- Error message -->
+				<div id="message-text"></div>
+			</div>
+		</div>
+
+		<!-- JS -->
+		<script src="../js/register.js"></script>
+	</body>
+</html>

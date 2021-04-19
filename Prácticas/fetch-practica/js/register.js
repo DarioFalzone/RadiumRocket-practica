@@ -231,7 +231,8 @@ sendButton.addEventListener('click', validationFunction);
 // HTTP REQUEST
 function apiRequest()
 {
-    let url = "https://jsonplaceholder.typicode.com/users?email=" + userName.value + email.value + password.value;
+    const url = `https://jsonplaceholder.typicode.com/users?email=${email.value}`;
     fetch(url)
-    .then(response => console.log(response));
+			.then(response => response.json()) //Formateo a json la respuesta
+			.then(json => console.log(json)) //Muestro en consola
 }
